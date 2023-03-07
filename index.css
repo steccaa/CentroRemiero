@@ -1,26 +1,35 @@
 body {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Lago_di_Pusiano_%28Bosisio_Parini%2C_Pusiano%2C_Cesana_Brianza%29.jpg/1920px-Lago_di_Pusiano_%28Bosisio_Parini%2C_Pusiano%2C_Cesana_Brianza%29.jpg");
+    background-image: url("https://www.eccolecco.it/wp-content/uploads/lago-di-pusiano-casartelli.jpg"); 
+    background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;         
   }
+  
   nav {
     background-color: #a5a5a5;
+    width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: center;
   }
   
   nav li {
-    float: left;
+    display: inline-block;
+  margin: 0 35px;
   }
   
   nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 25px;
     text-decoration: none;
   }
   
@@ -28,10 +37,15 @@ body {
     background-color: #111;
   }
   
-  h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  .testotitolo{
+    text-align: center;
+    color: rgb(70, 124, 126);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   }
-  img {
-    float: right;
-    margin-left: 10px;
+  .cit {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   }
+ 
