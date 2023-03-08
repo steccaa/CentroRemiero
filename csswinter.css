@@ -1,0 +1,66 @@
+body {
+    background-color:rgb(225, 198, 153); 
+    background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;         
+  }
+  
+  nav {
+    background-color:rgba(0, 0, 0, 0.3);
+    width: 80%;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: center;
+  }
+  
+  nav li {
+    display: inline-block;
+  margin: 0 35px;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 25px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #111;
+  }
+  
+  .testotitolo{
+    text-align: center;
+    color: rgb(70, 124, 126);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  .img-winter{
+    text-align: center;
+  }
+  .img-winter img{
+    margin: auto;
+  }
+  .image {
+    float: left;
+    margin-right: 5px; /* Opzionale - Aggiunge uno spazio tra l'immagine e il testo */
+  }
+  
+  .text-container {
+    float: left;
+    width: 45%; /* Imposta la larghezza dell'elemento contenitore del testo */
+  }
+ .tab{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+ }
+  
+  
+  
