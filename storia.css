@@ -1,0 +1,64 @@
+body{
+    background-image: url(https://www.viaggiandoatestaalta.it/wp-content/uploads/2019/06/Lago-di-Pusiano-7.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.2)),url(https://www.viaggiandoatestaalta.it/wp-content/uploads/2019/06/Lago-di-Pusiano-7.jpg) no-repeat center center;
+    background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+#carat{
+    margin-right: 2%;
+    width:auto
+      }
+      #carat2{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+          }
+      nav {
+        background-color:rgba(206, 206, 206, 0.3);
+        width: 70%;
+      margin: 0 auto;
+      font-size: 14px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: center;
+      }
+      
+      nav li {
+        display: inline-block;
+      margin: 0 35px;
+      }
+      
+      
+      nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 5px 30px;
+        text-decoration: none;
+      }
+      
+      nav li a:hover {
+        background-color: #111;
+      }
+      .tit{
+        text-align: center;
+    color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+      }
+      img{
+        float: left;
+        margin-right: 10px;
+      }
+      .testostoria{
+    color: white;
+    max-width: 1400px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+      }
