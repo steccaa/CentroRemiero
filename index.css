@@ -1,12 +1,12 @@
 .sfondo-home{
-    background-image: url("https://www.eccolecco.it/wp-content/uploads/lago-di-pusiano-casartelli.jpg"); 
-    background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.2)),url(https://www.eccolecco.it/wp-content/uploads/lago-di-pusiano-casartelli.jpg) no-repeat center center;
+    background-image: url("https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/332918920_912136596776289_5140068581701498302_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=QZLqVfrRy_MAX_Fksq7&_nc_ht=scontent-mxp2-1.xx&oh=00_AfBBrQZxHK6zOWg4sxtui8OG0mx4ciLfoB7LqUi-ODb4NA&oe=64199E19"); 
+    background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.2)),url(https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/332918920_912136596776289_5140068581701498302_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=QZLqVfrRy_MAX_Fksq7&_nc_ht=scontent-mxp2-1.xx&oh=00_AfBBrQZxHK6zOWg4sxtui8OG0mx4ciLfoB7LqUi-ODb4NA&oe=64199E19) no-repeat center center;
     background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;         
-  }
-  .sfondo-storia{
-    background-image: url("https://www.viaggiandoatestaalta.it/wp-content/uploads/2019/06/Lago-di-Pusiano-7.jpg"); 
+        background-repeat: no-repeat; 
+      } 
+        .sfondo-storia{
+          background-image: url("https://www.viaggiandoatestaalta.it/wp-content/uploads/2019/06/Lago-di-Pusiano-7.jpg"); 
     background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.2)),url(https://www.viaggiandoatestaalta.it/wp-content/uploads/2019/06/Lago-di-Pusiano-7.jpg) no-repeat center center;
     background-size: cover;
         background-position: center;
@@ -30,7 +30,7 @@ width:auto
       }
   nav {
     background-color:rgba(206, 206, 206, 0.3);
-    width: 70%;
+    width: 100%;
   margin: 0 auto;
   font-size: 14px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -95,8 +95,8 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   }
   footer.tre div{
     display: flex;
-    margin-left: 33.5%;
-    margin-right: 33.5%;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
   }
   .tre{
     position:fixed;
