@@ -19,6 +19,7 @@
         background-position: center;
         background-repeat: no-repeat;
   }
+  
   #carat{ margin-right: 2%; width:auto 
   } 
   #carat2{ display: flex; justify-content: left; align-items: left; 
