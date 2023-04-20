@@ -16,8 +16,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  background-image: url("fotofoto.jpg"); 
-  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)),url(fotofoto.jpg) no-repeat center center;
+  background-color:black; 
   background-size: cover;
       background-position: center;
       background-repeat: no-repeat; 
@@ -28,10 +27,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: right;
-  max-width: 720px;
-  margin: 25 auto;
-  height: 40vh;
+  max-width: 3020px;
+  margin: 0 auto;
+  height: 15vh;
   list-style: none;
+  background-color: rgb(139, 238, 255);
 }
 
 .menu li {
@@ -70,7 +70,8 @@ html {
   
   /* &:not(:last-child) */
 :not(:last-child) {
-    margin-right: 30px;
+    margin-right: 22px;
+    
   }
   
   /* @keyframes */
@@ -113,10 +114,12 @@ html {
   color: #ffffff;
   text-align: center;
   font-size: 50px;
+  background-color: black;
 }
 .write2{
   font-family: "Varela Round", sans-serif;
   color: #ffffff;
   text-align: center;
   font-size: 15px;
+  background-color: black;
 }
