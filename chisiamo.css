@@ -1,85 +1,156 @@
-@import url("https://fonts.googleapis.com/css?family=Varela+Round");
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
-  letter-spacing: 1.1px;
-}
-
-body,
-html {
-  width: 100%;
-  height: 100%;
-  background-color:black; 
-  background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; 
-  font-family: "Varela Round", sans-serif;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: right;
-  max-width: 3020px;
-  margin: 0 auto;
-  height: 15vh;
-  list-style: none;
-  background-color: rgb(139, 238, 255);
-}
-
-.menu li {
-  width: 300px;
-  height: 75px;
-  transition: background-position-x 0.9s linear;
-  text-align: center;
-}
-
-.menu li a {
-  font-size: 35px;
-  color: #ffffff;
+/* Definizione delle variabili */
+:root {
+  --color-base: #fff;
+  --color-text: #222;
+  --color-accent: desaturate(navy,80%);
+  }
+  
+  /* Reset degli stili */
+  
+  /* Stili per il body */
+  box-sizing border-box
+  body {
+  background: var(--color-accent);
+  color: var(--color-text);
+  line-height: normal;
+  font-size: 16px;
+  font-family: sans-serif;
+  }
+  
+  /* Stili per i link */
+  a, a:hover {
+  color: var(--color-accent);
   text-decoration: none;
-  transition: all 0.45s;
-}
+  font-weight: 600;
+  }
+  
+  /* Stili per la navbar */
+  nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  background: var(--color-base);
+  box-shadow: 0 0px 9px 4px rgba(0,0,0,.1), 0 -5px 2px 2px rgba(0,0,0,.1);
+  z-index: 1000;
+  min-width: 580px;
+  }
+  
+  /* Stili per il logo nella navbar */
+  nav .logo {
+  position: relative;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  }
+  nav .logo span {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  font-size: 13pt;
+  }
+  nav .logo:hover {
+  background: lighten(var(--color-accent), 40);
+  }
+  
+  /* Stili per i link nella navbar */
+  nav .links {
+  float: right;
+  margin-right: 30px;
+  position: relative;
+  }
+  
+  nav .links li {
+  list-style: none;
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+  }
+  
+  nav .links li > a {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 30px;
+  height: 30px;
+  }
+  
+  nav .links li > a:hover {
+  color: var(--color-base);
+  background: var(--color-accent);
+  border-radius: 2px;
+  }
+  
+  nav .links li > a[class^="trigger-"] {
+  padding-right: 40px;
+  }
+  
+  nav .links li > a > .arrow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 35%;
+  text-align: center;
+  right: 10px;
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: rgba(0,0,0,.3) transparent;
+  }
+  
+  nav .links li > a > .arrow:after {
+  content: "";
+  border-left: 1px solid rgba(0,0,0,.15);
+  top: -10px;
+  left: -15px;
+  position: absolute;
+  height: 15px;
+  }
+  
+  nav .links li ul {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  background: var(--color-base);
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0,0,0,.15);
+  display: none;
+  }
+  nav .links li ul > li {
+  clear: both;
+  list-style: none;
+  display: block;
+  padding: 0 10px;
+  margin: 0;
+  width: 100%;
+  }
+  nav .links li ul > li:hover {
+  background: lighten(var(--color-accent), 40);
+  }
+  
+  nav .links li:hover > .drop {
+  display: block;
+  animation: fadeInRight .3s ease;
+  -webkit-animation: fadeInRight .3s ease;
+  }
+  
+  /* Animazione fadeInRight */
+  @keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  transform: translate3d(100%,0,0);
+  }
+  100% {
+  opacity: 1;
+  transform: none;
+  }
+  }
 
-.menu li:hover {
-  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMGMxMy43NSwwLDI4Ljc0LTM4Ljc3OCw0Ni4xNjgtMTkuNDE2QzE5Mi42NjksNDYuNSwyNDMuNjAzLDQ3LjU4NSwyNjAsNDcuNTg1CWMzMS44MjEsMCwxMzAsMCwxMzAsMCIvPgo8L3N2Zz4K");
-  animation: line 1s;
-}
 
-.menu li:hover a {
-  color: #d94f5c;
-}
-/* &:hover */
-/* background */
-:hover {
-    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
-    animation: line 1s;
-  }
-  
-  /* &:hover a */
-:hover a {
-    color: #d94f5c;
-  }
-  
-  /* &:not(:last-child) */
-:not(:last-child) {
-    margin-right: 22px;
-    
-  }
-  
-  /* @keyframes */
-  @keyframes line {
-    0% {
-      background-position-x: 390px;
-    }
-  }
   
  .scritta{
   font-family: "Varela Round", sans-serif;
