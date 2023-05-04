@@ -157,8 +157,8 @@
   }
 
  .scritta{
-  font-family: "Varela Round", sans-serif;
-  color: #ffffff;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#007ABA;
   text-align: center;
   font-size: 60px;
  }
@@ -193,11 +193,42 @@
 .write2{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000000;
-  text-align:left;
+  text-align:center;
   font-size: 16px;
+}
+.write3{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#007ABA;
+  text-align: center;
+  font-size: 45px;
 }
 .img2{
   float: right;
   height: 350px;
   width: 500px;
 }
+.img3{
+  float: left;
+  height: 350px;
+  width: 500px;
+}
+footer {
+  height: 125px;
+  }
+  
+  
+  footer {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(0,0,0,0))
+  }
+  
+  
+  footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  }
+  
+  
+  footer {
+  text-align: center;
+  }
