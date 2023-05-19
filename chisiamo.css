@@ -173,7 +173,7 @@
   font-family: "Varela Round", sans-serif;
   color: #ffffff;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
 } 
   #carat{  
   margin-right: 2%; width:auto 
@@ -233,24 +233,21 @@
 }
 footer {
   height: 800px;
-  }
-  
-  
-  footer {
-    background: linear-gradient(0deg, rgba(129, 129, 129, 0.4), rgba(0,0,0,0))
-  }
-  
-  
-  footer {
+    background: linear-gradient(0deg, rgba(129, 129, 129, 0.4), rgba(0,0,0,0));
   position: absolute;
   bottom: 0;
   width: 100%;
-  }
-  
-  
-  footer {
   text-align: center;
   }
+
+  .footer2 {
+    height: 100px;
+    background: linear-gradient(0deg, rgba(129, 129, 129, 0.4), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    }
 
   .corrado{
     width: 100%;
@@ -267,6 +264,16 @@ footer {
   height: 100%;
   background-image: url("pexels-run-ffwpu-3554634.jpg"); 
   background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.30)),url(pexels-run-ffwpu-3554634.jpg) no-repeat center center;
+  background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;max-width: 100%; 
+  }
+  .fresta{
+    width: 100%;
+  height: 100%;
+  background-image: url("fotoaula.jpg"); 
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.40)),url(fotoaula.jpg) no-repeat center center;
   background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
