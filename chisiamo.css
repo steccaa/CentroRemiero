@@ -225,10 +225,22 @@
   width: 500px;
   margin-right: 10%;
 }
+.img1{
+  float: right;
+  height: 500px;
+  width: 375px;
+  margin-right: 10%;
+}
 .img3{
   float: left;
   height: 350px;
   width: 500px;
+  margin-left: 10%;
+}
+.img4{
+  float: left;
+  height: 500px;
+  width: 375px;
   margin-left: 10%;
 }
 footer {
