@@ -206,7 +206,7 @@
   margin-right: 2.5%;
 }
 .write3{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:"Varela Round", sans-serif;
   color:#007ABA;
   text-align: center;
   font-size: 50px;
@@ -216,6 +216,14 @@
   color: #ffffff;
   text-align:left;
   font-size: 20px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.write5{
+  font-family:"Varela Round", sans-serif;
+  color: #ffffff;
+  text-align:center;
+  font-size: 30px;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
@@ -433,6 +441,7 @@ footer {
       filter:contrast(0) brightness(10);
   }
   .container{
+    margin: left;
     text-align: center;
     border-color: #ffffff;
     z-index: 1;
@@ -441,4 +450,11 @@ footer {
     color: #ffffff;
     font-size: 18px;
     margin-bottom: 0px;
+    font-family: "Varela Round", sans-serif;
   }
+  #p1{
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 50px;
+  }
+  
