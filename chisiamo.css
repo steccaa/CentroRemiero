@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 /* Definizione delle variabili */
 :root {
-  --color-base: #007ABA;
+  --color-base:rgba(255, 255, 255, 0) ;
   --color-text: #222;
   --color-accent: desaturate(navy,80%);
   }
@@ -20,7 +20,7 @@
   
   /* Stili per i link */
   a, a:hover {
-  color:#fff;
+  color:#ffffff;
   text-decoration: none;
   font-weight: 600;
   font-family: "Varela Round", sans-serif;
@@ -173,7 +173,7 @@
   font-family: "Varela Round", sans-serif;
   color: #ffffff;
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
 } 
   #carat{  
   margin-right: 2%; width:auto 
@@ -252,7 +252,7 @@
   margin-left: 10%;
 }
 footer {
-  height: 800px;
+  height: 600px;
     background: linear-gradient(0deg, rgba(129, 129, 129, 0.4), rgba(0,0,0,0));
   position: absolute;
   bottom: 0;
@@ -282,8 +282,8 @@ footer {
   .lollo{
     width: 100%;
   height: 100%;
-  background-image: url("pexels-run-ffwpu-3554634.jpg"); 
-  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.30)),url(pexels-run-ffwpu-3554634.jpg) no-repeat center center;
+  background-image: url("https://images.pexels.com/photos/14974644/pexels-photo-14974644/free-photo-of-austria-hallstatt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); 
+  background: linear-gradient(0deg, rgba(0,0,0,0.3) rgba(0,0,0,0.35)),url(https://images.pexels.com/photos/14974644/pexels-photo-14974644/free-photo-of-austria-hallstatt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center;
   background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
