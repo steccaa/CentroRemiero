@@ -58,8 +58,8 @@
   font-size: 12pt;
   }
   nav .logo:hover {
-  background: lighten(var(--color-accent), 40);
-  }
+    background: lighten(var(--color-accent), 40);
+    }
   
   /* Stili per i link nella navbar */
   nav .links {
@@ -83,12 +83,7 @@
   height: 50px;
   }
   
-  nav .links li > a:hover {
-  color: var(--color-base);
-  background: var(--color-accent);
-  border-radius: 2px;
-  }
-  
+
   nav .links li > a[class^="trigger-"] {
   padding-right: 40px;
   }
