@@ -269,7 +269,7 @@ footer {
     width: 100%;
   height: 170%;
   background-image: url("https://disciules.it/blog/wp-content/uploads/2020/05/014-egirent_lagopusiano.jpg"); 
-  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.65)),url(https://disciules.it/blog/wp-content/uploads/2020/05/014-egirent_lagopusiano.jpg) no-repeat center center;
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6)),url(https://disciules.it/blog/wp-content/uploads/2020/05/014-egirent_lagopusiano.jpg) no-repeat center center;
   background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
